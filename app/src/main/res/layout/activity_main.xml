@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A989E3"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/appName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:text="MALI MUSIC"
+        android:textAllCaps="true"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+
+    <Button
+        android:id="@+id/btnAdd2Playlist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ADD TO PLAYLIST"
+        android:layout_below="@id/appName"
+        android:layout_marginBottom="24dp"
+        android:textStyle="italic"/>
+
+    <EditText
+        android:id="@+id/textInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textSongTitle"
+        android:layout_below="@id/btnAdd2Playlist"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:text="Enter the title of the song"/>
+
+    <EditText
+        android:id="@+id/textInput2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textArtistName"
+        android:layout_below="@id/textInput"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:text="Artist who made the song"/>
+
+    <EditText
+        android:id="@+id/textInput3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textRating"
+        android:layout_below="@id/textInput2"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:text="Rate the song on a scale of 1-5"/>
+
+    <EditText
+        android:id="@+id/textInput4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textComment"
+        android:layout_below="@id/textInput3"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:text="Comment on how the song sounds"/>
+
+    <Button
+        android:id="@+id/Go2ViewScreen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MOVE 2 ANOTHER SCREEN"
+        android:textStyle="italic"
+        android:layout_below="@id/textInput4"/>
+
+    <Button
+        android:id="@+id/btnExit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="EXIT"
+        android:textStyle="italic"
+        android:layout_below="@id/Go2ViewScreen"
+        android:layout_marginBottom="20dp"/>
+
+</RelativeLayout>
+
